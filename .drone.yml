@@ -1,0 +1,11 @@
+// .drone.yml
+
+kind: pipeline
+name: default
+
+steps:
+- name: publish
+  image: alpha # 
+  pull: always
+  commands:
+  - echo "Hello World!"
