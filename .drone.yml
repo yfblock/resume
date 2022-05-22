@@ -11,4 +11,4 @@ steps:
 volumes: # 定义流水线挂载目录，用于共享数据
   - name: test-v
     host:
-      path: $DEPLOY_DIR
+      path: ${DEPLOY_DIR}
