@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: publish
-  image: alpha
+  image: alpine
   pull: always
   commands:
   - echo "Hello World!"
