@@ -12,4 +12,5 @@ steps:
 volumes: # 定义流水线挂载目录，用于共享数据
   - name: test-v
     host:
-      path: /volume1/docker # 从宿主机中挂载的目录
+      path: 
+        from_secret: DEPLOY_DIR
