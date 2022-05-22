@@ -2,6 +2,14 @@ kind: pipeline
 name: default
 steps:
   - name: Hello World
-    image: centos
+    image: alphine
+    volumes: # 将容器内目录挂载到宿主机，仓库需要开启Trusted设置
+      - name: test-v
+        path: /root/docker # 将maven下载依赖的目录挂载出来，防止重复下载
     commands:
-    - echo Hello World
+    - ls /root/docker
+
+volumes: # 定义流水线挂载目录，用于共享数据
+  - name: test-v
+    host:
+      path: /volume1/docker # 从宿主机中挂载的目录
