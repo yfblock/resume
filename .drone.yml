@@ -8,9 +8,11 @@ steps:
         path: /root/docker # 将maven下载依赖的目录挂载出来，防止重复下载
     commands:
     - ls /root/docker
+environment:
+  DEPLOY_DIR:
+    from_secret: DEPLOY_DIR
 
 volumes: # 定义流水线挂载目录，用于共享数据
   - name: test-v
     host:
-      path: 
-        from_secret: DEPLOY_DIR
+      path: $DEPLOY_DIR
