@@ -1,9 +1,7 @@
 kind: pipeline
 name: default
-
 steps:
-- name: publish
-  image: alpine
-  pull: always
-  commands:
-  - echo "Hello World!"
+  - name: Hello World
+    image: centos
+    commands:
+    - echo Hello World
