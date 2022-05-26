@@ -1,7 +1,17 @@
+* {
+  font-family: Microsoft YaHei,SimSun,PingFang SC,PingFang SC Regular;
+}
+
 body {
+  background-color: rgb(118,127,149);
+}
+
+.main {
   font-family: sans-serif;
   margin: auto;
-  max-width: 1280px;
+  max-width: 960px;
+  background-color: #fff;
+  padding: 1.5em 3em;
 }
 
 .navbar {
@@ -22,3 +32,135 @@ body {
   color: #ffffff;
 }
 
+p {
+  line-height: 150%;
+}
+
+div.section {
+  margin-bottom: 2em;
+  position: relative;
+}
+
+ul > li {
+  margin-top: 0.2em;
+}
+
+hr {
+  background-color: rgb(35,70,102);
+  height: .4em;
+  border-width: 0;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+div.section > a {
+  background-color: rgb(35,70,102);
+  color: #fff;
+  line-height: 2.5em;
+  height: 2.5em;
+  display: block;
+  padding-left: 2em;
+}
+
+div.section > a::before {
+  content: ' ';
+  background-color: #fff;
+  display: block;
+  width: 5px;
+  height: 2.5em;
+  position: absolute;
+  left: 10px;
+}
+
+div.person-info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+
+div.person-info > .picture {
+  margin: 0 2em;
+}
+
+div.person-info > div.detials {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.person-info > div.detials > .info-group {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.person-info > div.detials > .info-group > div {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div.person-info > div.detials >.name {
+  font-size: xx-large;
+  color: rgb(35,70,102);
+}
+
+div.person-info > div.detials > .info-group > .info > a:first-child {
+  display: inline-block;
+  width: 3em;
+  text-align: justify;
+  text-align-last:justify;
+  margin-right: .1em;
+}
+
+div.person-info > div.detials > .info-group > .info > a:last-child::before {
+  content: ':';
+  margin-right: .5em;
+}
+
+div.person-info > div.detials > .info-group > .blog {
+  width: 100%;
+}
+
+div.person-info > div.detials > .info-group > .blog > a:first-child {
+  margin-right: .5em;
+}
+
+.logo > div {
+  width: 5em;
+  background-color: rgb(35,70,102);
+  color: #fff;
+  font-size: 1.2em;
+  padding: .7em 2em;
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+}
+
+.logo > div::before {
+  content: ' ';
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 1em;
+}
+
+.logo > div::after {
+  content: ' ';
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  right: 1em;
+}
