@@ -1,6 +1,7 @@
 * {
-  /* font-family: Microsoft YaHei,SimSun,PingFang SC,PingFang SC Regular; */
-  font-family: '微软雅黑';
+  font-family: sans-serif;
+  font-family: 微软雅黑,SimSun,PingFang SC,PingFang SC Regular;
+  /* font-family: '微软雅黑'; */
 }
 
 body {
@@ -8,7 +9,6 @@ body {
 }
 
 .main {
-  font-family: sans-serif;
   margin: auto;
   max-width: 960px;
   background-color: #fff;
@@ -49,14 +49,17 @@ div.section .line {
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+  position: relative;
+  margin-left: 2em;
 }
 
 div.section .line a {
   display: inline-block;
   font-size: 1em;
+  
 }
 
-div.section .line .center {
+div.section .line a:nth-child(2) {
   position: absolute;
   display: inline;
   left: 50%;
@@ -64,11 +67,22 @@ div.section .line .center {
 }
 
 div.section .line-content {
-  margin-left: 2em;
+  margin-left: 4em;
+  text-indent: 2em;
 }
+
+  .opensource .line-content {
+    display: none !important;
+  }
 
 ul > li {
   margin-top: 0.2em;
+  display: flex;
+}
+
+.opensource ul li {
+  /* border-bottom: 1px #ccc solid; */
+  margin-bottom: .7em;
 }
 
 hr {

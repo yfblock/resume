@@ -91,97 +91,116 @@
                     <li>2023年“全国大学生计算机系统能力大赛操作系统设计大赛”OS内核实现赛全国一等奖</li>
                 </ul>
             </div>
-            <div class="section">
+            <div class="section opensource">
                 <a>开源仓库</a>
-                <ul>
-                    <li>yfSql Java orm数据库快速操作框架 https://github.com/yfblock/yfSql</li>
-                    <li>lost-net-stack 一个使用 rust 编写的精简网络协议栈 https://github.com/Byte-OS/lose-net-stack</li>
-                    <li>ByteOS 基于 Riscv 的宏内核 https://github.com/yfblock/oskernel2022-byte-os</li>
-                    <li>ByteOS-V2 基于多种架构的宏内核 https://github.com/Byte-OS/byteos</li>
-                    <li>byteosc 将 Byteos 进行 c 语言重写 https://github.com/yfblock/byteosc</li>
-                    <li>一个精简的微内核 https://github.com/yfblock/ByteOS-MicroKernel</li>
-                    <li>PolyHal 支持多种架构的硬件抽象层 https://github.com/Byte-OS/polyhal</li>
-                    <li>rel4-linux-kit 在 sel4 之上支持 linux app 的套件 https://github.com/rel4team2/rel4-linux-kit</li>
-                </ul>
-            </div>
-            <div  class="section">
-                <a>项目经历</a>
                 <div class="line">
-                    <a>2020</a>
-                    <a>YfSql</a>
+                    <a>2020.06-2020.08</a>
+                    <a class="center">https://github.com/yfblock/yfSql</a>
+                    <a>yfSql</a>                        
                 </div>
                 <div class="line-content">
-                    一个独立的 JDBC ORM 框架，快速操作数据库，利用 sql 语句生成数据库操作。
+                    一个独立的 JDBC ORM 框架，快速操作数据库，利用 sql 语句生成数据库操作。方便小型项目快速完成与数据库的对接和操作。
                 </div>
                 <div class="line">
                     <a>2022.04-2022.10</a>
+                    <a class="center">https://github.com/Byte-OS/lose-net-stack</a>
+                    <a>lost-net-stack</a>
+                </div>
+                <div class="line-content">
+                    lose-net-stack 一个使用 rust 编写的精简网络协议栈, 支持 TCP、UDP、IP 协议。
+                </div>
+                <div class="line">
+                    <a>2022.04-2022.10</a>
+                    <a class="center">https://github.com/yfblock/oskernel2022-byte-os</a>
                     <a>ByteOS</a>
                 </div>
                 <div class="line-content">
                     在 riscv64 架构的支持运行部分 linux 程序的操作系统宏内核，可以运行 busybox、lua、lmbench。
                 </div>
                 <div class="line">
-                    <a>2022.10-2022.11</a>
-                    <a>likeme/PR</a>
-                </div>
-                <div class="line-content">
-                    likeme 是一个使用 rust 编写的帮助收集静态对象并快速遍历的库，为其修复了裸机平台的支持。
-                </div>
-                <div class="line">
-                    <a>2023.01-2023.03</a>
-                    <a>lost-net-stack</a>
-                </div>
-                <div class="line-content">
-                    使用 Rust 编写的精简网络协议栈，支持 TCP、UDP、IP 协议。
-                </div>
-                <div class="line">
-                    <a>2023.03-2023.04</a>
-                    <a>lost-net-stack for rcore-tutorial-v3/PR</a>
-                </div>
-                <div class="line-content">
-                    在 rcore-tutorial-v3 添加了网路支持，使用了 lose-net-stack
-                </div>
-                <div class="line">
-                    <a>2023.02-2023.05</a>
-                    <a>ArceOS/PR</a>
-                </div>
-                <div class="line-content">
-                    ArceOS 是使用 Rust 编写的 Unikernel，为其添加了 sqlite3 支持和早期的 fs 支持。
-                </div>
-                <div class="line">
                     <a>2023.05-至今</a>
-                    <a>ByteOS</a>
+                    <a class="center">https://github.com/Byte-OS/byteos</a>
+                    <a>ByteOS v2</a>
                 </div>
                 <div class="line-content">
-                    支持 x86_64、aarch64、riscv64、loongarch64 的操作系统宏内核，支持运行大量 linux 程序，busybox、lua、lmbench、iozone等。支持网络操作，支持 fat32 和 ext4 文件系统。
+                    ByteOS-V2 支持 x86_64、aarch64、riscv64、loongarch64 的操作系统宏内核，支持运行大量 linux 程序，busybox、lua、lmbench、iozone等。支持网络操作，支持 fat32 和 ext4 文件系统。
+                </div>
+                <div class="line">
+                    <a>2024.05-2024.09</a>
+                    <a class="center">https://github.com/yfblock/byteosc</a>
+                    <a>byteosc</a>
+                </div>
+                <div class="line-content">
+                    byteosc 将 Byteos 进行 c 语言重写
+                </div>
+                <div class="line">
+                    <a>2024.05-2024.06</a>
+                    <a class="center">https://github.com/yfblock/ByteOS-MicroKernel</a>
+                    <a>ByteOS-MicroKernel</a>
+                </div>
+                <div class="line-content">
+                    一个精简的微内核
                 </div>
                 <div class="line">
                     <a>2024.02-至今</a>
+                    <a class="center">https://github.com/Byte-OS/polyhal</a>
                     <a>polyhal</a>
                 </div>
                 <div class="line-content">
                     polyhal 是一个支持 x86_64、aarch64、riscv64、loongarch64 的硬件抽象层，可以用于快速构建裸机程序。
                 </div>
                 <div class="line">
-                    <a>2024.06-2024.08</a>
-                    <a>rel4</a>
-                </div>
-                <div class="line-content">
-                    rel4 是一个使用 rust 重写的 sel4 内核，保持了与 sel4 的全兼容，为其优化了代码，并将其迁移到 aarch64 架构下。
-                </div>
-                <div class="line">
                     <a>2024.08-至今</a>
+                    <a class="center">https://github.com/rel4team2/rel4-linux-kit</a>
                     <a>rel4-linux-kit</a>
                 </div>
                 <div class="line-content">
                     rel4-linux-kit 是一套在 sel4/rel4 之上运行 linux 程序的套件，可以在 sel4/rel4 之上运行一个或多个传统的操作系统内核。
                 </div>
+            </div>
+            <div  class="section opensource">
+                <a>社区贡献</a>
                 <div class="line">
-                    <a>2025.01-2025.03</a>
-                    <a>loongarch64 for arceos/PR</a>
+                    <a>2022.10-2022.11</a>
+                    <a class="center">https://github.com/dtolnay/linkme</a>
+                    <a>linkme 裸机平台支持</a>                        
                 </div>
                 <div class="line-content">
-                    ArceOS 是使用 Rust 编写的 Unikernel，为其添加 loongarch64 的支持
+                    linkme 是一个使用 rust 编写的帮助收集静态对象并快速遍历的库，允许在多个 crate 或模块中定义静态项，并在一个统一的地方遍历所有的静态项。为其修复了裸机平台的支持。
+                </div>
+                <div class="line">
+                    <a>2023.03-2023.04</a>
+                    <a class="center">https://github.com/rcore-os/rCore-Tutorial-v3</a>
+                    <a>rCore-tutorial-v3 网络支持</a>
+                </div>
+                <div class="line-content">
+                    <a>rCore-Tutorial-v3 是一个面向操作系统（OS）教学的开源项目，旨在帮助学习者从零开始构建一个小型但完整的操作系统内核。它是清华大学 rCore-Tutorial 项目的第三个版本，提供更现代的设计和更好的跨架构支持。
+                        为其添加了网络的支持和用户态测试，接入 lost-net-stack，支持 UDP 和 TCP，并在用户态添加了一个简单的 http-server 程序。
+                    </a>
+                </div>
+                <div class="line">
+                    <a>2023.02-2023.05</a>
+                    <a class="center">https://github.com/arceos-org/arceos</a>
+                    <a>ArceOS 早期 fs 和 sqlite3 支持</a>
+                </div>
+                <div class="line-content">
+                    ArceOS 是使用 Rust 编写的一个模块化 Unikernel。为其添加了 sqlite3 支持和早期的 fs 支持。
+                </div>
+                <div class="line">
+                    <a>2024.06-2024.08</a>
+                    <a class="center">https://github.com/rel4team2/rel4_kernel</a>
+                    <a>rel4 重构和 aarch64 移植</a>
+                </div>
+                <div class="line-content">
+                    rel4 是一个使用 rust 重写的 sel4 内核，保持了与 sel4 的全兼容，为其优化了代码，并将其迁移到 aarch64 架构下。
+                </div>
+                <div class="line">
+                    <a>2025.01-2025.03</a>
+                    <a class="center">https://github.com/arceos-org/arceos</a>
+                    <a>Arceos 的 la64 架构支持</a>
+                </div>
+                <div class="line-content">
+                    ArceOS 是使用 Rust 编写的一个模块化 Unikernel。为其添加 loongarch64 的支持
                 </div>
             </div>
         </div>
