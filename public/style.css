@@ -1,5 +1,6 @@
 * {
-  font-family: Microsoft YaHei,SimSun,PingFang SC,PingFang SC Regular;
+  /* font-family: Microsoft YaHei,SimSun,PingFang SC,PingFang SC Regular; */
+  font-family: '微软雅黑';
 }
 
 body {
@@ -39,6 +40,31 @@ p {
 div.section {
   margin-bottom: 2em;
   position: relative;
+}
+
+div.section .line {
+  margin: .3em 0;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+div.section .line a {
+  display: inline-block;
+  font-size: 1em;
+}
+
+div.section .line .center {
+  position: absolute;
+  display: inline;
+  left: 50%;
+  transform: translate(-50%, 0)
+}
+
+div.section .line-content {
+  margin-left: 2em;
 }
 
 ul > li {
@@ -98,26 +124,36 @@ div.person-info > div.detials > .info-group {
 }
 
 div.person-info > div.detials > .info-group > div {
-  width: 50%;
+  width: 33.3%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 1.2em;
+
 }
 
-div.person-info > div.detials >.name {
-  font-size: xx-large;
+div.person-info > div.detials .top {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
   color: rgb(35,70,102);
+}
+
+div.person-info > div.detials .name {
+  flex: 1;
+  font-size: 2.5em;
+  display: flex ;
 }
 
 div.person-info > div.detials > .info-group > .info > a:first-child {
   display: inline-block;
-  width: 3em;
   text-align: justify;
   text-align-last:justify;
+  font-weight: 500;
   margin-right: .1em;
 }
 
-div.person-info > div.detials > .info-group > .info > a:last-child::before {
+div.person-info > div.detials > .info-group > .info > a:first-child::after {
   content: ':';
   margin-right: .5em;
 }
@@ -130,7 +166,7 @@ div.person-info > div.detials > .info-group > .blog > a:first-child {
   margin-right: .5em;
 }
 
-.logo > div {
+div.person-info .logo > div {
   width: 5em;
   background-color: rgb(35,70,102);
   color: #fff;
@@ -141,7 +177,7 @@ div.person-info > div.detials > .info-group > .blog > a:first-child {
   font-weight: 500;
 }
 
-.logo > div::before {
+div.person-info .logo > div::before {
   content: ' ';
   list-style: none;
   display: inline-block;
@@ -153,7 +189,7 @@ div.person-info > div.detials > .info-group > .blog > a:first-child {
   left: 1em;
 }
 
-.logo > div::after {
+div.person-info .logo > div::after { 
   content: ' ';
   list-style: none;
   display: inline-block;
