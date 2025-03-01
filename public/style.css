@@ -1,16 +1,15 @@
+@media all {
 * {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
   font-family: sans-serif;
   font-family: 微软雅黑,SimSun,PingFang SC,PingFang SC Regular;
-  /* font-family: '微软雅黑'; */
 }
 
-body {
-  background-color: rgb(118,127,149);
-}
-
-.main {
-  margin: auto;
-  max-width: 960px;
+.page {
+  margin: 0 auto 1em;
+  width: 960px;
+  height: 1360px;
   background-color: #fff;
   padding: 1.5em 3em;
 }
@@ -62,7 +61,7 @@ div.section .line a {
 div.section .line a:nth-child(2) {
   position: absolute;
   display: inline;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, 0)
 }
 
@@ -213,4 +212,19 @@ div.person-info .logo > div::after {
   background-color: #fff;
   top: 0;
   right: 1em;
+}
+}
+
+body {
+  background-color: rgb(118,127,149);
+}
+
+@media print {
+  body {
+    background-color: #fff;
+  }
+
+  .page {
+    margin: 0 !important;
+  }
 }
