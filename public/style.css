@@ -6,14 +6,6 @@
   font-family: 微软雅黑,SimSun,PingFang SC,PingFang SC Regular;
 }
 
-.page {
-  margin: 0 auto 1em;
-  width: 960px;
-  height: 1360px;
-  background-color: #fff;
-  padding: 1.5em 3em;
-}
-
 .navbar {
   background-color: #313236;
   border-radius: 2px;
@@ -219,12 +211,24 @@ body {
   background-color: rgb(118,127,149);
 }
 
+.page {
+  margin: 0 auto 1em;
+  width: 960px;
+  height: 1360px;
+  background-color: #fff;
+  padding: 1.5em 3em;
+}
+
 @media print {
   body {
     background-color: #fff;
   }
 
   .page {
-    margin: 0 !important;
+    margin: 0;
+    width: 960px;
+    height: 1360px;
+    background-color: #fff;
+    padding: 1.5em 3em;
   }
 }
