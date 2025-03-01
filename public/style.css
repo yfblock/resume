@@ -6,6 +6,15 @@
   font-family: 微软雅黑,SimSun,PingFang SC,PingFang SC Regular;
 }
 
+.page {
+  margin: 0 auto 1em;
+  width: 960px;
+  height: 1360px;
+  background-color: #fff;
+  padding: 1.5em 3em;
+  box-sizing: border-box;
+}
+
 .navbar {
   background-color: #313236;
   border-radius: 2px;
@@ -129,12 +138,15 @@ div.person-info > div.detials > .info-group {
 }
 
 div.person-info > div.detials > .info-group > div {
-  width: 33.3%;
+  width: 35%;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: 1.2em;
+}
 
+div.person-info > div.detials > .info-group > div.first {
+  width: 25% !important;
 }
 
 div.person-info > div.detials .top {
@@ -160,14 +172,6 @@ div.person-info > div.detials > .info-group > .info > a:first-child {
 
 div.person-info > div.detials > .info-group > .info > a:first-child::after {
   content: ':';
-  margin-right: .5em;
-}
-
-div.person-info > div.detials > .info-group > .blog {
-  width: 100%;
-}
-
-div.person-info > div.detials > .info-group > .blog > a:first-child {
   margin-right: .5em;
 }
 
@@ -211,24 +215,12 @@ body {
   background-color: rgb(118,127,149);
 }
 
-.page {
-  margin: 0 auto 1em;
-  width: 960px;
-  height: 1360px;
-  background-color: #fff;
-  padding: 1.5em 3em;
-}
-
 @media print {
   body {
     background-color: #fff;
   }
 
   .page {
-    margin: 0;
-    width: 960px;
-    height: 1360px;
-    background-color: #fff;
-    padding: 1.5em 3em;
+    margin: 0 !important;
   }
 }
