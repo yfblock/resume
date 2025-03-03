@@ -133,6 +133,15 @@ div.person-info > div.detials > .info-group > div {
   font-size: 1.2em;
 }
 
+.github-link {
+  transform: translateY(-20%);
+}
+
+.github-link > a {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
 div.person-info > div.detials > .info-group > div.first {
   width: 25% !important;
 }
@@ -158,7 +167,7 @@ div.person-info > div.detials > .info-group > .info > a:first-child {
   margin-right: .1em;
 }
 
-div.person-info > div.detials > .info-group > .info > a:first-child::after {
+div.person-info > div.detials > .info-group > .info > a:first-child::after, .github-link > a:first-child::after {
   content: ':';
   margin-right: .5em;
 }
