@@ -15,30 +15,12 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
-}
-
-.navbar a {
-  color: #aaa;
-  display: inline-block;
-  font-size: 15px;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  color: #ffffff;
-}
-
 p {
   line-height: 150%;
 }
 
 div.section {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   position: relative;
 }
 
@@ -56,10 +38,9 @@ div.section .line {
 div.section .line a {
   display: inline-block;
   font-size: 1em;
-  
 }
 
-div.section .line a:nth-child(2) {
+div.section .line a.center {
   position: absolute;
   display: inline;
   left: 45%;
@@ -67,22 +48,29 @@ div.section .line a:nth-child(2) {
 }
 
 div.section .line-content {
-  margin-left: 4em;
+  margin-left: 0em;
   text-indent: 2em;
 }
 
-  .opensource .line-content {
-    display: none !important;
-  }
+div.section .section-content {
+  margin-left: 2em;
+  text-indent: 2em;
+  margin-top: .4em;
+}
+
+div.section .keywords {
+  margin-left: 2em;
+  margin-top: .4em;
+  font-size: 1.05em;
+}
+
+/* .opensource .line-content {
+  display: none !important;
+} */
 
 ul > li {
   margin-top: 0.2em;
   display: flex;
-}
-
-.opensource ul li {
-  /* border-bottom: 1px #ccc solid; */
-  margin-bottom: .7em;
 }
 
 hr {
@@ -115,11 +103,11 @@ div.section > a::before {
 div.person-info {
   display: flex;
   flex-direction: row;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 div.person-info > .picture {
-  margin: 0 2em;
+  margin: 0 1em;
 }
 
 div.person-info > div.detials {
@@ -216,6 +204,10 @@ body {
 }
 
 @media print {
+  @page {
+    size: A4;
+  }
+
   body {
     background-color: #fff;
   }
