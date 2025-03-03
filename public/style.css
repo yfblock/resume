@@ -64,10 +64,6 @@ div.section .keywords {
   font-size: 1.05em;
 }
 
-/* .opensource .line-content {
-  display: none !important;
-} */
-
 ul > li {
   margin-top: 0.2em;
   display: flex;
@@ -142,6 +138,43 @@ div.person-info > div.detials > .info-group > div {
   font-weight: 500;
 }
 
+div.person-info .test-grades tr:first-child {
+  font-weight: 500;
+}
+
+div.person-info .test-grades td, div.person-info .test-grades th {
+  font-size: 1.2em;
+  width: 3em;
+  text-align: center;
+}
+
+div.person-info .test-grades {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  margin-bottom: .7em;
+  transform: translateY(-5%);
+}
+
+div.person-info .test-grades table {
+  display: none;
+}
+
+div.person-info .test-grades > div:first-child {
+  position: relative;
+  font-size: 1.3em;
+  width: 5em;
+}
+
+div.person-info .test-grades > div:first-child > a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  flex: 1;
+  text-align: center  ;
+}
+
 div.person-info > div.detials > .info-group > div.first {
   width: 25% !important;
 }
@@ -149,12 +182,12 @@ div.person-info > div.detials > .info-group > div.first {
 div.person-info > div.detials .top {
   display: flex;
   flex-direction: row;
+  position: relative;
   flex: 1;
   color: rgb(35,70,102);
 }
 
 div.person-info > div.detials .name {
-  flex: 1;
   font-size: 2.5em;
   display: flex ;
 }

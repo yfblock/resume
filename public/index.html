@@ -21,6 +21,24 @@
                         <div class="name">
                             <a>杨金博</a>
                         </div>
+                        <div class="test-grades">
+                            <table>
+                                <tr>
+                                    <th>政治</th>
+                                    <th>英语</th>
+                                    <th>数学</th>
+                                    <th>408</th>
+                                    <th>总分</th>
+                                </tr>
+                                <tr>
+                                    <td>47</td>
+                                    <td>47</td>
+                                    <td>84</td>
+                                    <td>101</td>
+                                    <td>279</td>
+                                </tr>
+                            </table>
+                        </div>
                         <div class="logo">
                             <div>
                                 个人简历
@@ -249,4 +267,11 @@
             </div>
         </div>
     </body>
+    <script lang="javascript">
+        const searchParams = new URLSearchParams(window.location.search);
+        if(searchParams.get('grades')) {
+            let ele = document.querySelector("div.person-info .test-grades table");
+            ele.style.display="block";
+        }
+    </script>
 </html>
